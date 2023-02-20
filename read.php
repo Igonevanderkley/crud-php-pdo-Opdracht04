@@ -64,6 +64,7 @@ foreach ($result as $info) {
 
 <body>
 
+
     <h3>Persoonsgegevens</h3>
 
     <a href="index.php">
