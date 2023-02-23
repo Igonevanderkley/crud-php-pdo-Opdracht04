@@ -1,4 +1,5 @@
 <?php 
+
 $dbHost = 'localhost';
 $dbName = 'Nailstudio';
 $dbUser = 'IK_2209C';
