@@ -25,7 +25,9 @@ $sql = "INSERT INTO Afspraak (
                         Telefoonnummer,
                         Email,
                         Afspraakdatum,
-                        Behandeling,
+                        Optie1,
+                        Optie3,
+                        Optie2,
                         Verzendtijd) 
         VALUES          (NULL,
                         :basiskleur1,
@@ -35,7 +37,9 @@ $sql = "INSERT INTO Afspraak (
                         :telefoonnummer,
                         :email,
                         :afspraakdatum,
-                        :behandeling,
+                        :optie1,
+                        :optie2,
+                        :optie3,
                         :verzendtijd);";
 
 $statement = $pdo->prepare($sql);
@@ -46,7 +50,9 @@ $statement->bindValue(':basiskleur4', $_POST['kleur4'], PDO::PARAM_STR);
 $statement->bindValue(':telefoonnummer', $_POST['telnummer'], PDO::PARAM_STR);
 $statement->bindValue(':email', $_POST['mail'], PDO::PARAM_STR);
 $statement->bindValue(':afspraakdatum', $_POST['date'], PDO::PARAM_STR);
-$statement->bindValue(':behandeling', $_POST['option'], PDO::PARAM_STR);
+$statement->bindvalue(':optie1', $_POST['option1'], PDO::PARAM_STR);
+$statement->bindValue(':optie2', $_POST['option2'], PDO::PARAM_STR);
+$statement->bindValue(':optie3', $_POST['option3'], PDO::PARAM_STR);
 $statement->bindValue(':verzendtijd', $_POST['send_time'], PDO::PARAM_STR);
 
 $result = $statement->execute();
