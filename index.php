@@ -40,12 +40,14 @@
             <label for="date">Afspraak datum:</label><br>
             <input type="datetime-local" name="date" id="date"><br>
 
-            <input type="checkbox" id="option" name="option" value="Nagelbijt arangement">
-            <label for="option"> Nagelbijt arrangement (termijnbetaling mogelijk) $180</label><br>
-            <input type="checkbox" id="option" name="option" value="Luxe manicure">
-            <label for="option"> Luxe manicure (massage en handpakking) $30,00</label><br>
-            <input type="checkbox" id="option" name="option" value="Nagelreparatie">
-            <label for="option"> Nagelreparatie per nagel (in eerste week gratis) $5,00</label><br><br>
+            <input type="checkbox" id="option1" name="option1" value="Nagelbijt arangement">
+            <label for="option1"> Nagelbijt arrangement (termijnbetaling mogelijk) $180</label><br>
+
+            <input type="checkbox" id="option2" name="option2" value="Luxe manicure">
+            <label for="option2"> Luxe manicure (massage en handpakking) $30,00</label><br>
+
+            <input type="checkbox" id="option3" name="option3" value="Nagelreparatie">
+            <label for="option3"> Nagelreparatie per nagel (in eerste week gratis) $5,00</label><br><br>
 
             <input type="hidden" name="send_time" id="send_time">
 
