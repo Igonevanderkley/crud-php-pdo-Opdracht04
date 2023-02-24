@@ -32,7 +32,9 @@ foreach ($result as $info) {
                     <td>$info->Telefoonnummer</td>
                     <td>$info->Email</td>
                     <td>$info->Afspraakdatum</td>
-                    <td>$info->Behandeling</td>
+                    <td>$info->Optie1</td>
+                    <td>$info->Optie2</td>
+                    <td>$info->Optie3</td>
                     <td>$info->Verzendtijd</td>
 
                     <td>
@@ -79,7 +81,9 @@ foreach ($result as $info) {
             <th>Telefoonnummer</th>
             <th>Email</th>
             <th>Afspraakdatum</th>
-            <th>Behandeling</th>
+            <th>optie1</th>
+            <th>optie2</th>
+            <th>optie3</th>
             <th></th>
             <th></th>
             <t /head>
